@@ -1,5 +1,5 @@
 /*
- * Run the a command and measure the user CPU time it consumes.
+ * Run the command and measure the user CPU time it consumes.
  *
  * Outputs to stderr one line with the integer number of milliseconds of user
  * CPU time consumed by the program it launches.
