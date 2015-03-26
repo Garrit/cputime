@@ -29,3 +29,6 @@ program and its arguments as arguments to `cputime`. For example, to run a
 program `/bin/foo` with the argument `bar`, run
 
     cputime /bin/foo bar
+
+The execution time of `/bin/foo` in milliseconds will be the last line of
+output to `stdout`.
