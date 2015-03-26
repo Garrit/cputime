@@ -16,10 +16,13 @@ depends on Linux-specific resource metrics.
 Installation
 ------------
 
-Run `make` from the project directory to compile the project. After
-compilation, the `cputime` binary will exist in the root of the project
-directory and can be copied to and run from wherever necessary. For system-wide
-installations, `/usr/local/bin/cputime` is generally a good place to put it.
+    make
+    sudo make install
+
+...will compile the project and install the `cputime` binary to
+`/usr/local/bin/cputime`.
+
+Conversely, the `uninstall` Make target will attempt to remove the binary.
 
 Running
 -------
