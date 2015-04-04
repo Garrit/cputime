@@ -54,5 +54,8 @@ int main(int argc, char *argv[])
     fprintf(stderr, "%ld\n",
         (consumed_time.tv_sec * 1000000 + consumed_time.tv_usec) / 1000);
 
-    return status;
+    if (WIFEXITED(status))
+        return WEXITSTATUS(status);
+    else
+        return EXIT_FAILURE;
 }
